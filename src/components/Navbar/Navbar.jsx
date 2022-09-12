@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./navbar.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
@@ -9,7 +10,11 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href="#" className={activeNav === "#" ? "active" : ""}>
+      <a
+        href="#"
+        onClick={() => setActiveNav("#")}
+        className={activeNav === "#" ? "active" : ""}
+      >
         <AiOutlineHome />
       </a>
       <a
@@ -27,9 +32,9 @@ const Navbar = () => {
         <BiBook />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
         <RiServiceLine />
       </a>
