@@ -1,6 +1,5 @@
 {
   "name": "portfolio-website",
-  "homepage": "http://sujitsamaltechworks.github.io/portfolio-website/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
