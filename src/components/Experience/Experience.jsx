@@ -3,13 +3,20 @@ import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 
 const frontEndSkills = [
-  { skill: "HTML", level: "INTERMEDIATE" },
-  { skill: "CSS", level: "INTERMEDIATE" },
+  { skill: "HTML5 / CSS3", level: "INTERMEDIATE" },
   { skill: "REACTJS", level: "INTERMEDIATE" },
   { skill: "JAVASCRIPT", level: "INTERMEDIATE" },
   { skill: "TYPESCRIPT", level: "INTERMEDIATE" },
   { skill: "BOOTSTRAP", level: "INTERMEDIATE" },
-  { skill: "MATERIALUI", level: "INTERMEDIATE" },
+  { skill: "MATERIAL UI", level: "INTERMEDIATE" },
+  { skill: "JEST / RTL TESTING", level: "INTERMEDIATE" },
+  { skill: "CYPRESS", level: "INTERMEDIATE" },
+];
+
+const backEndSkills = [
+  { skill: "EXPRESS JS", level: "BEGINNER" },
+  { skill: "MONGO DB", level: "BEGINNER" },
+  { skill: "NODE JS", level: "BEGINNER" }
 ];
 
 const Experience = () => {
@@ -37,7 +44,7 @@ const Experience = () => {
         <div className="experience__backend">
           <h3>Backend Development</h3>
           <div className="experience__content">
-            {frontEndSkills.map((items) => {
+            {backEndSkills.map((items) => {
               return (
                 <article className="experience__details">
                   <BsPatchCheckFill className="experience__details-icon" />

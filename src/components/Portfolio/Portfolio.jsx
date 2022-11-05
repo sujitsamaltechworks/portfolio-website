@@ -2,19 +2,20 @@
 import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/weather-app.png";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG2 from "../../assets/Technosocial App.png";
 
 const projects = [
-  { image: IMG1, title: "Weather App", gitHub:"https://github.com/sujitsamaltechworks/portfolio-website", liveDemo: "https://thriving-pika-49efa6.netlify.app/" },
-  { image: IMG2, title: "Basic Todo App" },
-  { image: IMG3, title: "Basic Table App" },
-  { image: IMG4, title: "Basic Redux App" },
-  { image: IMG5, title: "Basic React App" },
-  { image: IMG6, title: "Basic E-Commerce App" },
+  {
+    image: IMG2,
+    title: "Technosocial App",
+    gitHub: "https://github.com/sujitsamaltechworks/social-media-react",
+  },
+  {
+    image: IMG1,
+    title: "Weather App",
+    gitHub: "https://github.com/sujitsamaltechworks/portfolio-website",
+    liveDemo: "https://thriving-pika-49efa6.netlify.app/",
+  },
 ];
 
 const Portfolio = () => {
@@ -35,10 +36,22 @@ const Portfolio = () => {
                 <a href={item.gitHub} className="btn" target="_blank">
                   Github
                 </a>
-                <a href={item.liveDemo} className="btn" target="_blank">
-                  Live Demo
-                </a>
+                {item.liveDemo ? (
+                  <a href={item.liveDemo} className="btn" target="_blank">
+                    Live Demo
+                  </a>
+                ) : (
+                  <div />
+                )}
               </div>
+              {!item.liveDemo ? (
+                <h4 style={{ color: "red" }}>
+                  Live Demo is down due to deployment issues. Please visit
+                  github repo to access the code
+                </h4>
+              ) : (
+                <div />
+              )}
             </article>
           );
         })}

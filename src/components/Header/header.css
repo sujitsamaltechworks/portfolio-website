@@ -38,13 +38,13 @@ header {
 /*----------IMAGE---------------*/
 .me {
   background-color: var(--color-primary);
-  width: 22rem;
-  height: 30rem;
+  width: 14rem;
+  height: 20rem;
   position: absolute;
-  left: calc(50% - 11rem);
+  left: calc(50% - 7rem);
   /* transform: translateX(50% - 11rem); */
   margin-top: 4rem;
-  border-radius: 12rem;
+  border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
