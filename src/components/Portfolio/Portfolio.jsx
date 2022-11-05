@@ -13,7 +13,7 @@ const projects = [
   {
     image: IMG1,
     title: "Weather App",
-    gitHub: "https://github.com/sujitsamaltechworks/portfolio-website",
+    gitHub: "https://github.com/sujitsamaltechworks/weather-app",
     liveDemo: "https://thriving-pika-49efa6.netlify.app/",
   },
 ];
