@@ -3,6 +3,7 @@ import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/weather-app.png";
 import IMG2 from "../../assets/Technosocial App.png";
+import IMG3 from "../../assets/snake-game.png";
 
 const projects = [
   {
@@ -11,11 +12,17 @@ const projects = [
     gitHub: "https://github.com/sujitsamaltechworks/social-media-react",
   },
   {
+    image: IMG3,
+    title: "Snake Game",
+    gitHub: "https://github.com/sujitsamaltechworks/snakemania-app",
+    liveDemo: "https://snake-mania-app.netlify.app/",
+  },
+  {
     image: IMG1,
     title: "Weather App",
     gitHub: "https://github.com/sujitsamaltechworks/weather-app",
     liveDemo: "https://thriving-pika-49efa6.netlify.app/",
-  },
+  }
 ];
 
 const Portfolio = () => {
