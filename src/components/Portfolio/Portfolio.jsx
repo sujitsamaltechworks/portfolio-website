@@ -4,12 +4,19 @@ import "./portfolio.css";
 import IMG1 from "../../assets/weather-app.png";
 import IMG2 from "../../assets/Technosocial App.png";
 import IMG3 from "../../assets/snake-game.png";
+import IMG4 from "../../assets/ask-me.png";
 
 const projects = [
   {
     image: IMG2,
     title: "Technosocial App",
     gitHub: "https://github.com/sujitsamaltechworks/social-media-react",
+  },
+  {
+    image: IMG4,
+    title: "Ask Me Search Engine",
+    gitHub: "https://github.com/sujitsamaltechworks/google-search-engine",
+    liveDemo: "https://ask-me-engine.netlify.app/",
   },
   {
     image: IMG3,
@@ -22,7 +29,7 @@ const projects = [
     title: "Weather App",
     gitHub: "https://github.com/sujitsamaltechworks/weather-app",
     liveDemo: "https://thriving-pika-49efa6.netlify.app/",
-  }
+  },
 ];
 
 const Portfolio = () => {
