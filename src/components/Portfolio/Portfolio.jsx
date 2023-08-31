@@ -5,8 +5,23 @@ import IMG1 from "../../assets/weather-app.png";
 import IMG2 from "../../assets/Technosocial App.png";
 import IMG3 from "../../assets/snake-game.png";
 import IMG4 from "../../assets/ask-me.png";
+import IMG5 from '../../assets/ResumeGen.png';
+import IMG6 from '../../assets/coinmaster.png';
+
 
 const projects = [
+  {
+    image: IMG5,
+    title: "Resume Generator",
+    gitHub: "https://github.com/sujitsamaltechworks/resume-generator",
+    liveDemo: "https://thriving-pika-49efa6.netlify.app/",
+  },
+  {
+    image: IMG6,
+    title: "Coinmaster",
+    gitHub: "https://github.com/sujitsamaltechworks/crypto-deck",
+    liveDemo: "https://thriving-pika-49efa6.netlify.app/",
+  },
   {
     image: IMG2,
     title: "Technosocial App",
